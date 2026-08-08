@@ -19,7 +19,7 @@ function 去A点 () {
 function 去B点 () {
     // 后退22厘米，速度要慢
     nezhaV2.comboMove(45, nezhaV2.VerticallDirection.Down, 27, nezhaV2.DistanceAndAngleUnit.cm)
-    左转巡到黑线(620)
+    左转巡到黑线(700)
     nezhaV2.comboMove(80, nezhaV2.VerticallDirection.Up, 3, nezhaV2.DistanceAndAngleUnit.cm)
     // 到达第一个转弯路口
     巡线到1111()
@@ -39,7 +39,7 @@ function 去D点 () {
     // 到达第2个路口
     巡线到1111()
     nezhaV2.comboMove(80, nezhaV2.VerticallDirection.Up, 6, nezhaV2.DistanceAndAngleUnit.cm)
-    右转巡到黑线(600)
+    右转巡到黑线(500)
     巡线到1111()
     // 继续向前走
     nezhaV2.comboMove(80, nezhaV2.VerticallDirection.Up, 6, nezhaV2.DistanceAndAngleUnit.cm)
@@ -47,7 +47,7 @@ function 去D点 () {
     nezhaV2.comboMove(70, nezhaV2.VerticallDirection.Up, 1, nezhaV2.DistanceAndAngleUnit.cm)
     nezhaV2.comboStop()
     // 放下急救包
-    nezhaV2.move(nezhaV2.MotorPostion.M1, 50, nezhaV2.MovementDirection.CCW, 80, nezhaV2.SportsMode.Degree)
+    nezhaV2.move(nezhaV2.MotorPostion.M1, 50, nezhaV2.MovementDirection.CCW, 90, nezhaV2.SportsMode.Degree)
 }
 function 巡线到1111 () {
     PlanetX_Basic.Trackbit_get_state_value()
@@ -63,7 +63,7 @@ function 左转6 () {
 function 去C点 () {
     // 从B点后退，要慢速
     nezhaV2.comboMove(45, nezhaV2.VerticallDirection.Down, 26, nezhaV2.DistanceAndAngleUnit.cm)
-    右转巡到黑线(500)
+    右转巡到黑线(320)
     // 开始巡曲线
     巡线到1111()
     nezhaV2.comboMove(80, nezhaV2.VerticallDirection.Up, 5, nezhaV2.DistanceAndAngleUnit.cm)
@@ -75,7 +75,7 @@ function 去C点 () {
     // 闪烁红蓝
     strip.showColor(PlanetX_Display.colors(PlanetX_Display.NeoPixelColors.Red))
     // 播放警报声2秒
-    music.play(music.stringPlayable("C5 B A G F E D C ", 600), music.PlaybackMode.InBackground)
+    music.play(music.stringPlayable("C5 B A G F E D C ", 400), music.PlaybackMode.InBackground)
     basic.pause(500)
     strip.showColor(PlanetX_Display.colors(PlanetX_Display.NeoPixelColors.Blue))
     basic.pause(200)
@@ -160,7 +160,7 @@ function 去E点 () {
     nezhaV2.comboMove(70, nezhaV2.VerticallDirection.Up, 2, nezhaV2.DistanceAndAngleUnit.cm)
     nezhaV2.comboStop()
     // 松开爪子放下急救包
-    nezhaV2.move(nezhaV2.MotorPostion.M1, 50, nezhaV2.MovementDirection.CW, 80, nezhaV2.SportsMode.Degree)
+    nezhaV2.move(nezhaV2.MotorPostion.M1, 50, nezhaV2.MovementDirection.CW, 90, nezhaV2.SportsMode.Degree)
     nezhaV2.comboStop()
     basic.pause(200)
 }
