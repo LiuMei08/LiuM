@@ -19,13 +19,15 @@ function 去A点 () {
 function 去B点 () {
     // 后退22厘米，速度要慢
     nezhaV2.comboMove(45, nezhaV2.VerticallDirection.Down, 27, nezhaV2.DistanceAndAngleUnit.cm)
-    左转巡到黑线(700)
+    左转巡到黑线(730)
     nezhaV2.comboMove(80, nezhaV2.VerticallDirection.Up, 3, nezhaV2.DistanceAndAngleUnit.cm)
     // 到达第一个转弯路口
     巡线到1111()
     nezhaV2.comboMove(80, nezhaV2.VerticallDirection.Up, 7, nezhaV2.DistanceAndAngleUnit.cm)
     // 到达第一个转弯路口
     巡线到1111()
+    nezhaV2.comboMove(70, nezhaV2.VerticallDirection.Up, 2, nezhaV2.DistanceAndAngleUnit.cm)
+    nezhaV2.comboStop()
     // 逆时针夹住人偶
     nezhaV2.move(nezhaV2.MotorPostion.M1, 30, nezhaV2.MovementDirection.CW, 150, nezhaV2.SportsMode.Degree)
     basic.pause(200)
@@ -44,7 +46,7 @@ function 去D点 () {
     // 继续向前走
     nezhaV2.comboMove(80, nezhaV2.VerticallDirection.Up, 6, nezhaV2.DistanceAndAngleUnit.cm)
     巡线到1111()
-    nezhaV2.comboMove(70, nezhaV2.VerticallDirection.Up, 1, nezhaV2.DistanceAndAngleUnit.cm)
+    nezhaV2.comboMove(70, nezhaV2.VerticallDirection.Up, 2, nezhaV2.DistanceAndAngleUnit.cm)
     nezhaV2.comboStop()
     // 放下急救包
     nezhaV2.move(nezhaV2.MotorPostion.M1, 50, nezhaV2.MovementDirection.CCW, 90, nezhaV2.SportsMode.Degree)
@@ -62,8 +64,8 @@ function 左转6 () {
 }
 function 去C点 () {
     // 从B点后退，要慢速
-    nezhaV2.comboMove(45, nezhaV2.VerticallDirection.Down, 26, nezhaV2.DistanceAndAngleUnit.cm)
-    右转巡到黑线(320)
+    nezhaV2.comboMove(45, nezhaV2.VerticallDirection.Down, 27, nezhaV2.DistanceAndAngleUnit.cm)
+    右转巡到黑线(310)
     // 开始巡曲线
     巡线到1111()
     nezhaV2.comboMove(80, nezhaV2.VerticallDirection.Up, 5, nezhaV2.DistanceAndAngleUnit.cm)
@@ -148,7 +150,7 @@ function 去E点 () {
     nezhaV2.comboStart(-30, -30)
     basic.pause(1000)
     nezhaV2.comboStart(-40, -20)
-    basic.pause(300)
+    basic.pause(320)
     nezhaV2.comboStop()
     左转巡到黑线(700)
     巡线到1111()
@@ -197,10 +199,10 @@ function 左转到0110 () {
     }
 }
 function 去F点 () {
-    后退(800)
-    basic.pause(500)
+    后退(760)
+    basic.pause(380)
     nezhaV2.comboStop()
-    左转巡到黑线(600)
+    左转巡到黑线(560)
     巡线到1111()
     // 到达场地的最左边路口
     nezhaV2.comboMove(80, nezhaV2.VerticallDirection.Up, 6, nezhaV2.DistanceAndAngleUnit.cm)
@@ -208,7 +210,7 @@ function 去F点 () {
     巡线到1111()
     // 到达场地的最左上角路口
     nezhaV2.comboMove(80, nezhaV2.VerticallDirection.Up, 5, nezhaV2.DistanceAndAngleUnit.cm)
-    右转巡到黑线(550)
+    右转巡到黑线(450)
     巡线到1111()
     nezhaV2.comboMove(80, nezhaV2.VerticallDirection.Up, 7, nezhaV2.DistanceAndAngleUnit.cm)
     // 开始巡黑白线
