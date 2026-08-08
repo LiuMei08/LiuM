@@ -191,7 +191,7 @@ input.onButtonPressed(Button.B, function () {
     nezhaV2.move(nezhaV2.MotorPostion.M1, 20, nezhaV2.MovementDirection.CCW, 10, nezhaV2.SportsMode.Degree)
 })
 function 左转到0110 () {
-    左转1(380)
+    左转1(350)
     PlanetX_Basic.Trackbit_get_state_value()
     while (PlanetX_Basic.TrackbitState(PlanetX_Basic.TrackbitStateType.Tracking_State_1)) {
         左转6()
