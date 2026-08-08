@@ -26,7 +26,7 @@ function 去B点 () {
     nezhaV2.comboMove(80, nezhaV2.VerticallDirection.Up, 7, nezhaV2.DistanceAndAngleUnit.cm)
     // 到达第一个转弯路口
     巡线到1111()
-    nezhaV2.comboMove(70, nezhaV2.VerticallDirection.Up, 2, nezhaV2.DistanceAndAngleUnit.cm)
+    nezhaV2.comboMove(70, nezhaV2.VerticallDirection.Up, 3, nezhaV2.DistanceAndAngleUnit.cm)
     nezhaV2.comboStop()
     // 逆时针夹住人偶
     nezhaV2.move(nezhaV2.MotorPostion.M1, 30, nezhaV2.MovementDirection.CW, 150, nezhaV2.SportsMode.Degree)
